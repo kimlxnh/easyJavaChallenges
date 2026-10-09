@@ -56,7 +56,7 @@ function countWords(str){
   return words.length;
 }
 
-//Struggling with this one. Tried without the empty string, tried using if else but can't get the last one to output as 7? 
+//Struggling with this one. Tried without the empty string, tried using if else but can't get the last one to output, it was 7? 
 
 
 // Example
