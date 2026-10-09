@@ -47,10 +47,16 @@ console.log(filterEvenNumbers(numbers)); // Output: [2, 4, 6]
 ---------------------------------------
 Write a function that takes a string and counts the number of words in it. Words are separated by spaces.*/
 
-function countWords(){
 
+function countWords(str){
+  if (str === ''){
+    return 0;
+  } 
+  let words = str.split(' ');
+  return words.length;
 }
 
+//Struggling with this one. Tried without the empty string, tried using if else but can't get the last one to output as 7? 
 
 
 // Example
