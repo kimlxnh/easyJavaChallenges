@@ -27,8 +27,14 @@ console.log(pushToArray(myArray, 4)); // Output: [1, 2, 3, 4]
 ---------------------------------------
 Write a function that takes an array of numbers and returns a new array containing only the even numbers from the original array.*/
 
-function filterEvenNumbers(){
-
+function filterEvenNumbers(arr){
+  let evenNumbers = [];
+  for (let i=0; i < arr.length; i++){
+    if (arr[i]%2 === 0){
+  evenNumbers.push(arr[i]);
+    }
+  }
+    return evenNumbers;
 }
 
 
