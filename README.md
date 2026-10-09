@@ -10,9 +10,11 @@
 ---------------------------------------
 Write a function that takes an array and an element as input and pushes the element into the array. */
 
-function pushToArray(){
-
+function pushToArray(myArray, element){
+  myArray.push(element)
+  return myArray;
 }
+
 
 
 
