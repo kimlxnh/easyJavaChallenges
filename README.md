@@ -142,10 +142,13 @@ console.log(reverseString("hello")); // Output: "olleh"
 Write a function that takes an array of numbers and returns the sum of all the numbers.
 */
 
-function sumArray(){
-
+function sumArray(arr){
+  let sum = 0;
+  for (i=0; i<arr.length; i++){
+  sum = sum + arr[i];
 }
-
+  return sum;
+}
 
 // Example:
 console.log(sumArray([1, 2, 3, 4, 5])); // Output: 15
