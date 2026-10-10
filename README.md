@@ -98,10 +98,20 @@ console.log(minMax([1])) // Output: [1, 1]
 Write a function that takes a two-digit number and determines if it's the largest of two possible digit swaps.
 E.g If 27 is our input, we should return false because swapping the digits gives us 72, and 72 > 27. On the other hand, swapping 43 gives us 34, and 43 > 34.
 */
+//Math.floor(num/10) gives the first digit, after rounding down, e.g. 72 = 7 === 1st digit.
+//Math.floor(num%10) gives the remainder after dividing by 10 (for 2 digit number) e.g. 72 = 2 === 2nd digit.
 
-function largestSwap(){
-
-}
+function largestSwap(num){
+  let firstDigit = Math.floor(num/10);
+  let secondDigit = Math.floor (num % 10);
+  
+let swapped = secondDigit * 10 + firstDigit;
+  if (num >= swapped){
+    return true;
+  } else {
+    return false;
+  }
+    }
 
 
 console.log(largestSwap(14))// Output: false
