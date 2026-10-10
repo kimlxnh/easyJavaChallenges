@@ -123,11 +123,15 @@ console.log(largestSwap(99)) // Output:true
 ----------------------------------------------------
 Write a function that takes a string as input and returns the string in reverse order.
 */
+//create new empty string + for loop to start at the end of the string (str.length -1) and to keep going until the 1st character (i>=0)
 
-function reverseString(){
-
+function reverseString(str){
+let revStr = ('')
+  for (let i=str.length - 1; i >= 0; i--){
+    revStr = revStr+str[i];
+  }
+  return revStr;
 }
-
 
 // Example:
 console.log(reverseString("hello")); // Output: "olleh"
