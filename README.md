@@ -159,14 +159,20 @@ console.log(sumArray([1, 2, 3, 4, 5])); // Output: 15
 Write a function that takes an array of numbers and returns the largest number in the array.
 */
 
-function largestNumber(){
-
+function largestNumber(arr) {
+let largeNum = arr[0];
+  for (let i=0; i<arr.length; i++){
+  if (arr[i] > largeNum){
+  largeNum = arr[i];
+  }
+  }
+    return largeNum;
 }
 
  
 // Example:
 console.log(largestNumber([1, 5, 3, 9, 2])); //Output: 9
-
+*/
 
 /* Challenge 9: Palindrome Checker
 ----------------------------------------------------
