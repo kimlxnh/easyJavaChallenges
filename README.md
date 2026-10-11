@@ -178,10 +178,17 @@ console.log(largestNumber([1, 5, 3, 9, 2])); //Output: 9
 ----------------------------------------------------
 Write a function that checks if a given string is a palindrome (reads the same forward and backward).
 */
+//using .reverse and .join for the empty string
 
-function isPalindrome(){
-
+function isPalindrome(str){
+    
+let reversed = str.split('').reverse('').join('');
+if (reversed === str){
+    return true;
+} else {
+    return false;
 }
+    }
 
 
 // Example:
