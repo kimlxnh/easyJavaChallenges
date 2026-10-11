@@ -201,10 +201,18 @@ console.log(isPalindrome("hello")); // Output: false
 Write a function, vowelCount, that takes a string as input and returns the number of vowels (a, e, i, o, u) in the string.
 */
 
-function vowelCount(){
+function vowelCount(str){
+    str = str.toLowerCase();
+    let vowels = str.split('');
+    let count = 0;
+    for (let i=0; i<str.length; i++){
+        if (vowels[i]==='a'||vowels[i]==='e'||vowels[i]==='i'||vowels[i]==='o'||vowels[i]==='u'){
+            count++;
+        }
+    }
+    return count;
 
 }
-
 
 // Example
 console.log(vowelCount("lafosseacademy")) //Output: 6
